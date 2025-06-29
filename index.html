@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: rgba(3, 3, 3, 0.819);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 8px;
+      background-color: #212020c1;
+    }
+
+    .container img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      margin-bottom: 2px;
+      color: #ffffffae;
+      font-size: 1.5rem;
+    }
+
+    .location {
+      margin-bottom: 5px;
+      color: royalblue;
+    }
+
+    .container p {
+      color: rgb(252, 249, 249);
+      margin-bottom: 15px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card-itens {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rebeccapurple;
+      color: white;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card-itens:hover {
+      color: #ffffff7f;
+      background-color: indigo;
+    }
+
+
+    @media (max-width: 350px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      .name {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="imgs/eu.jpg" alt="Foto de perfil" />
+    <h1 class="name">Otávio</h1>
+    <h5 class="location">São Vicente, SP</h5>
+    <p>Back-end Developer</p>
+    <div class="card">
+      <div class="card-itens">GitHub</div>
+      <div class="card-itens">Frontend Mentor</div>
+      <div class="card-itens">LinkedIn</div>
+      <div class="card-itens">Twitter</div>
+      <div class="card-itens">Instagram</div>
+    </div>
+  </div>
+</body>
+
+</html>
